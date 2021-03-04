@@ -90,7 +90,17 @@ html, body{
     margin-top: -25%;
     height:150%;
     width:150%;
+}
 
+/*restyles border-color when the user hovers over a choice*/
+.userChoice:hover{
+    border-color: orange;
+    transition-delay: 0.15s;
+}
+
+/*restyles border color and size when the user activates/clicks a choice*/
+.userChoice:active{
+    border: solid rgb(2, 165, 2) 4px;
 }
 
 /*centers text and sets font to bold.*/
