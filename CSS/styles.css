@@ -49,6 +49,7 @@ html, body{
     padding: 0px 5px;
 }
 
+/*See previous note.*/
 .comp{
     position: absolute;
     left: 85%;
@@ -57,49 +58,42 @@ html, body{
     padding: 0px 5px;
 }
 
+/*Centers outcome/results text below the scoreboard element.*/
 .outcomeText{
     text-align:center;
     /*change font here*/
 }
 
-/*Sets elements to diplay flex, allowing child elements to be flex'd inline or across the webpage.*/
+/*display sets elements to display flex, allowing us to manipulate it's children elements. flex-wrap sets elements to reposition within the contain so the children elements aren't distorted when browser is resized. justify-content sets even space between elements and edges of container. Sets container to be 33% of the web pages width. margin auto centers the element in the middle of page.*/
 .userChoiceCont{
     display:flex;
+    flex-wrap:wrap;
     justify-content: space-around;
     width: 33%;
     margin: auto;
 }
 
+/*Sets a solid white border to be circular instead of square. Limits size to 100x100px. sets overflow to hide anything that doesn't fit within the container*/
 .userChoice{
     border-radius: 50%;
     height: 100px;
     width: 100px;
     border: solid white 2px;
     margin: auto;
-    position:relative;
     overflow:hidden;
 }
 
+/*Margin removes any margin from elements and centers the item. margin-left and margin-top position the elements within the parent container/element. height and width sets size of image.*/
 .imgStyle{
-    display: inline;
     margin: 0 auto;
     margin-left: -25%;
     margin-top: -25%;
     height:150%;
     width:150%;
+
 }
-    
- /*centers the image*/
 
-/*
-.imageCropper{
-    border-radius: 50%;
-    position: absolute;
-    overflow:hidden;
-    width:50px;
-    height:50px;    
-}*/
-
+/*centers text and sets font to bold.*/
 .makeYourMove{
     text-align:center;
     font-weight: bold;
