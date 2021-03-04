@@ -1,0 +1,106 @@
+/*sensible default*/
+html, body{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+/*sensible default*/
+*{
+    box-sizing: border-box;
+}
+
+/*center header text*/
+.pageHeader{
+    text-align: center;
+    margin: 25px 0px;
+    /*change font here*/
+}
+
+/*set background color. set text color. set height of block to 100%*/
+.bodyMainCont{
+    background-color: rgb(20, 24, 66);
+    height: 100%;
+    color:white;
+}
+
+/*Sets a white border. Sets size of element to 15% of the total width. Centers on webpage. Sets position to relative so children elements can be manipulated*/
+.scoreboard{
+    border: solid white 2px;
+    width: 150px;
+    margin: auto;
+    position: relative;
+}
+
+/*Centers text within element.*/
+.gameCount{
+    text-align: center;
+    margin: 10px 0px;
+    font-size: 40px;
+}
+
+/*.user & .comp set position to absolute, allowing it to be moved relative to the parent elements position. sets background color to red. adjusts padding on left and right of the user & comp text on webpage.*/
+.user{
+    position: absolute;
+    left: -15%;
+    bottom:45%;
+    background-color:rgb(223, 63, 63);
+    padding: 0px 5px;
+}
+
+.comp{
+    position: absolute;
+    left: 85%;
+    bottom:45%;
+    background-color:rgb(223, 63, 63);
+    padding: 0px 5px;
+}
+
+.outcomeText{
+    text-align:center;
+    /*change font here*/
+}
+
+/*Sets elements to diplay flex, allowing child elements to be flex'd inline or across the webpage.*/
+.userChoiceCont{
+    display:flex;
+    justify-content: space-around;
+    width: 33%;
+    margin: auto;
+}
+
+.userChoice{
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    border: solid white 2px;
+    margin: auto;
+    position:relative;
+    overflow:hidden;
+}
+
+.imgStyle{
+    display: inline;
+    margin: 0 auto;
+    margin-left: -25%;
+    margin-top: -25%;
+    height:150%;
+    width:150%;
+}
+    
+ /*centers the image*/
+
+/*
+.imageCropper{
+    border-radius: 50%;
+    position: absolute;
+    overflow:hidden;
+    width:50px;
+    height:50px;    
+}*/
+
+.makeYourMove{
+    text-align:center;
+    font-weight: bold;
+}

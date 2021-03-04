@@ -4,29 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link type="stylesheet" href="css/styles.css"/>
+    <link rel="stylesheet" href="css/styles.css"/>
     <script src="app.js"></script>
     <title>Rock Paper Scissors</title>
 </head>
 
 
     <body>
-        <div class="headerCont">
+
             <header>
                 <h1 class="pageHeader">Rock Paper Scissors</h1>
             </header>
-        </div>
+
         <main class="bodyMainCont">
+
+            <br/> <!--Take this out soon! not a good solution!--> 
+            <br/>
+            
             <div class="scoreboard">
-                <h1 id="gameCount">0:0</h1>
-                <div class="user"></div>
-                <div class="comp"></div>
+                <h1 class="gameCount" id="gameCount">
+                    <span id="userScore">0</span>:<span id="compScore">0</span>
+                </h1>
+                <div class="user">user</div>
+                <div class="comp">comp</div>
             </div>
-            <p class="outcomeText">Paper covers Rock. You win!</p>
-            <div class="rock" id="rock">Rock</div>
-            <div class="paper" id="paper">Paper</div>
-            <div class="scissors" id="scissors">Scissors</div>
-            <p>Make your move.</p>
+            <br/>
+            <div class="outcomeText">
+                <h1>Paper covers Rock. You win!</h1>
+            </div>
+            <br/>
+            <div class="userChoiceCont"> 
+                <div class="userChoice" class="image-cropper">
+                    <img class="imgStyle" id="rock" src="/images/CroppedImage.rock.png"/>
+                </div>
+                <div class="userChoice" class="imageCropper">
+                    <img class="imgStyle" id="paper" src="/images/CroppedImage.paper.png"/>
+                </div>
+                <div class="userChoice" class="image-cropper">
+                    <img class="imgStyle" id="scissors" src="/images/CroppedImage.scissors.png"/>
+                </div>
+            </div>
+
+            <p class="makeYourMove">Make your move.</p>
+
         </main>    
 </body>
 </html>
