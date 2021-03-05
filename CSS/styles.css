@@ -112,12 +112,8 @@ html, body{
 /*restyles border-color when the user hovers over a choice*/
 .userChoice:hover{
     border: solid white 4px;
-    transition-delay: 0.25s;
+    transition-delay: 0.10s;
 }
-
-/*restyles border color and size when the user activates/clicks a choice*/
-
-
 
 
 /*centers text and sets font to bold.*/
