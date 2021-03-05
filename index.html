@@ -5,22 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/styles.css"/>
-    <script src="app.js"></script>
     <title>Rock Paper Scissors</title>
 </head>
 
 
     <body>
-
-            <header>
-                <h1 class="pageHeader">Rock Paper Scissors</h1>
-            </header>
-
+<!--PAGE HEADER-->
+        <header>
+            <h1 class="pageHeader">Rock Paper Scissors</h1>
+        </header>
+<!--MAIN CONTAINER-->
         <main class="bodyMainCont">
 
-            <br/> <!--Take this out soon! not a good solution!--> 
+            <br/> 
             <br/>
-
+<!--SCOREBOARD-->
             <div class="scoreboard">
                 <h1 class="gameCount" id="gameCount">
                     <span id="userScore">0</span>:<span id="compScore">0</span>
@@ -28,25 +27,38 @@
                 <div class="user">user</div>
                 <div class="comp">comp</div>
             </div>
-            <br/>
-            <div class="outcomeText">
-                <h1>Paper covers Rock. You win!</h1>
-            </div>
-            <br/>
-            <div class="userChoiceCont"> 
-                <div class="userChoice" class="image-cropper">
-                    <img class="imgStyle" id="rock" src="images/CroppedImage.rock.png"/>
-                </div>
-                <div class="userChoice" class="imageCropper">
-                    <img class="imgStyle" id="paper" src="images/CroppedImage.paper.png"/>
-                </div>
-                <div class="userChoice" class="image-cropper">
-                    <img class="imgStyle" id="scissors" src="images/CroppedImage.scissors.png"/>
-                </div>
+<!--BUTTON-->            
+            <div class="buttonContainer">
+               <button id="button">Reset</button>
             </div>
 
+            <br/>
+<!--OUTCOME TEXT-->
+            <div class="outcomeText">
+                <h1 id="outcomeText">THE ULTIMATE THROW-DOWN!</h1>
+            </div>
+            
+            <br/>
+ <!--USER CHOICE GRANDPARENT-->
+            <div class="userChoiceCont"> 
+ <!--USER CHOICE PARENT-->               
+                <div class="userChoice" class="image-cropper" id="rock">
+<!--USER CHOICE CHILDREN-->
+                    <img class="imgStyle" src="images/CroppedImage.rock.png"/>
+                </div>
+                <div class="userChoice" class="imageCropper" id="paper">
+                    <img class="imgStyle" src="images/CroppedImage.paper.png"/>
+                </div>
+                <div class="userChoice" class="image-cropper"  id="scissors">
+                    <img class="imgStyle" src="images/CroppedImage.scissors.png"/>
+                </div>
+            </div>
+<!--MAKE YOUR MOVE TEXT-->
             <p class="makeYourMove">Make your move.</p>
 
-        </main>    
-</body>
+        </main>   
+<!--JS SCRIPT: NOTHING BELOW!-->        
+    <script src="app.js"></script>     
+    </body>
+
 </html>
